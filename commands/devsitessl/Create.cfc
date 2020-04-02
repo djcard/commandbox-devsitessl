@@ -182,7 +182,7 @@ component {
         print.line('');
         print.line('Now Create the server key');
         print.line(
-            'openssl req -new -sha256 -nodes -out #destination##listFirst(domainname, '.')#-server.csr -newkey rsa:2048 -keyout #destination##listFirst(domainname, '.')#-server.key -config #listFirst(domainname, '.')#-cat #destination##listFirst(domainname, '.')#-server.csr.cnf'
+            'openssl req -new -sha256 -nodes -out #destination##listFirst(domainname, '.')#-server.csr -newkey rsa:2048 -keyout #destination##listFirst(domainname, '.')#-server.key -config #destination##listFirst(domainname, '.')#-server.csr.cnf'
         );
     }
 
