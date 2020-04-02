@@ -170,7 +170,7 @@ component {
             #chr(10)#
             [alt_names]#chr(10)#
             DNS.1 = localhost#chr(10)#';
-        fileWrite('#destination##domainname#-v3.ext', v3Data);
+        fileWrite('#destination##listfirst(domainname,'.')#-v3.ext', v3Data);
     }
 
     /*
